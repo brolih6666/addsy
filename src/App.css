@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.auth-input {
+		@apply py-2 px-4 bg-transparent border-violet-500 border-2 text-white font-semibold rounded-lg shadow-md hover:bg-transparent focus:outline-none focus:border-violet-600;
+	}
+	.auth-input-text {
+		@apply text-lg absolute  group-hover:-top-[25%] group-hover:text-violet-400 bg-violet-950 px-2 left-[20px] text-violet-200 transition-all;
+	}
+}
+#root {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
