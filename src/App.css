@@ -4,18 +4,31 @@
 
 @layer components {
 	.auth-input {
-		@apply py-2 px-4 bg-transparent border-violet-500 border-2 text-white font-semibold rounded-lg shadow-md hover:bg-transparent focus:outline-none focus:border-violet-600;
+		@apply py-2 px-4 bg-transparent border-gray-200 border-2 font-semibold text-white  rounded-lg shadow-sm hover:bg-transparent focus:outline-none focus:border-emerald-200;
 	}
 	.auth-input-text {
-		@apply text-lg absolute  group-hover:-top-[25%] group-hover:text-violet-400 bg-violet-950 px-2 left-[20px] text-violet-200 transition-all;
+		@apply absolute  group-hover:backdrop-blur-md px-2 left-[30px] transition-all;
+	}
+	.App {
+		@apply bg-emerald-700;
 	}
 }
 #root {
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
 	min-height: 100vh;
+}
+
+.Card-bg {
+	background-image: url('./assets/authWave.svg');
+	background-position: bottom;
+	background-size: cover;
+}
+
+.Login-bg {
+	background-image: url('./assets/loginBg.svg');
+	background-position: center;
+	background-size: cover;
 }
